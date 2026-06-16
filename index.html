@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuera Del Algoritmo | Cuaderno de poesía y educación</title>
+    <meta name="description" content="Fuera Del Algoritmo es un cuaderno de poesía, educación y mirada interior: una voz humana que escribe, piensa, duda, enseña y observa.">
+    <!-- Importamos Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fuentes elegantes para literatura -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Lato', sans-serif; }
+        .font-poesia { font-family: 'Lora', serif; line-height: 1.8; }
+        .bg-papel { background-color: #faf9f6; } /* Color tipo papel antiguo */
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in { animation: fadeIn 1s ease-out forwards; }
+        .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+        .focus\:not-sr-only:focus { position:absolute; width:auto; height:auto; margin:0; overflow:visible; clip:auto; white-space:normal; z-index:999; }
+    </style>
+</head>
+<body class="bg-papel text-gray-800 flex flex-col min-h-screen">
+    <a href="#contenido" class="sr-only focus:not-sr-only top-4 left-4 bg-white text-emerald-900 px-4 py-2 rounded shadow">Saltar al contenido</a>
+
+    <!-- Barra de Navegación Literaria -->
+    <nav class="border-b border-emerald-100 sticky top-0 z-50 bg-papel/90 backdrop-blur-sm">
+        <div class="max-w-4xl mx-auto px-4 py-6 flex justify-between items-center">
+            <div class="text-2xl font-poesia font-medium text-emerald-900 tracking-wide">
+                Fuera Del Algoritmo
+            </div>
+            <ul class="hidden md:flex space-x-6 text-sm uppercase tracking-widest text-gray-500">
+                <li><a href="#contenido" class="hover:text-emerald-700 transition">Inicio</a></li>
+                <li><a href="#textos" class="hover:text-emerald-700 transition">Poesía</a></li>
+                <li><a href="#educacion" class="hover:text-emerald-700 transition">Educación</a></li>
+                <li><a href="#archivo" class="hover:text-emerald-700 transition">Cuaderno</a></li>
+                <li><a href="#autor" class="hover:text-emerald-700 transition">Este espacio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Cabecera / Hero -->
+    <main id="contenido" class="flex-grow flex flex-col items-center px-4 pt-20 pb-16">
+        <div class="max-w-2xl text-center animate-fade-in">
+            <p class="text-sm uppercase tracking-[0.3em] text-emerald-700 mb-4">Cuaderno digital</p>
+            <h1 class="text-4xl md:text-5xl font-poesia italic text-emerald-900 mb-4">
+                Fuera Del Algoritmo
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-700 font-light mb-4">
+                Escribe, piensa, duda, enseña y observa.
+            </p>
+            <p class="text-lg text-gray-600 mb-10 font-light">
+                Un cuaderno de poesía y mirada interior. Un refugio contra la velocidad y lo automático.
+            </p>
+            <div class="w-16 h-px bg-amber-400 mx-auto mb-10"></div>
+        </div>
+
+        <!-- Muestra de contenido -->
+        <article class="max-w-2xl w-full bg-white p-8 md:p-12 shadow-sm border-t-4 border-emerald-600 rounded-sm animate-fade-in" style="animation-delay: 0.2s;">
+            <span class="inline-block px-3 py-1 bg-amber-50 text-amber-700 text-xs uppercase tracking-widest mb-4 rounded-full">Texto destacado • 10 Junio 2026</span>
+            <h2 class="text-2xl font-poesia text-emerald-900 mb-6">Lima no es el Perú</h2>
+            <div class="font-poesia text-gray-700 text-lg whitespace-pre-line mb-8">
+                No podemos decir de antemano que una mitad del Perú es fujimorista y la otra mitad castillista.
+                Tampoco que el país se deje explicar con una sola grieta.
+
+                Somos demasiados, demasiado distintos, demasiado complejos
+                como para caber en el molde de dos bandos.
+
+                Lima no es el Perú.
+                Y el Perú tampoco cabe en una etiqueta.
+            </div>
+            <div class="flex justify-between items-center border-t border-gray-100 pt-6 mt-4 gap-4 flex-wrap">
+                <a href="#textos" class="text-sm text-emerald-600 hover:text-emerald-800 italic transition">Seguir leyendo en el cuaderno →</a>
+                <span class="text-gray-500 font-poesia italic font-medium">Voz del cuaderno</span>
+            </div>
+        </article>
+    </main>
+    <section id="archivo" class="py-16 bg-white border-t border-emerald-100">
+        <div class="max-w-5xl mx-auto px-4">
+            <h3 class="text-xl font-poesia text-center text-emerald-900 mb-4">Puertas del cuaderno</h3>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Tres entradas para recorrer este espacio sin prisa: poesía, educación y un cuaderno vivo de notas, preguntas y hallazgos.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Categoría Poesía -->
+                <div class="group cursor-pointer">
+                    <div class="h-48 bg-papel flex items-center justify-center mb-4 overflow-hidden rounded-sm transition border border-emerald-100 shadow-sm">
+                        <div class="text-emerald-400 group-hover:scale-110 group-hover:text-emerald-600 transition duration-500">
+                            <!-- Icono de pluma/poesía -->
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+                        </div>
+                    </div>
+                    <h4 class="text-lg font-bold text-gray-800 group-hover:text-emerald-700 transition">Poesía</h4>
+                    <p class="text-gray-600 text-sm mt-2">Versos libres, rimas y sentimientos capturados a lo largo de dos décadas.</p>
+                </div>
+
+                <!-- Categoría Prosa -->
+                <div class="group cursor-pointer">
+                    <div class="h-48 bg-papel flex items-center justify-center mb-4 overflow-hidden rounded-sm transition border border-emerald-100 shadow-sm">
+                        <div class="text-amber-400 group-hover:scale-110 group-hover:text-amber-600 transition duration-500">
+                            <!-- Icono de libro/prosa -->
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                        </div>
+                    </div>
+                    <h4 class="text-lg font-bold text-gray-800 group-hover:text-amber-700 transition">Cuaderno</h4>
+                    <p class="text-gray-600 text-sm mt-2">Reflexiones, cuentos breves y pensamientos trazados en párrafos.</p>
+                </div>
+
+                <!-- Categoría Educación -->
+                <div class="group cursor-pointer">
+                    <div class="h-48 bg-papel flex items-center justify-center mb-4 overflow-hidden rounded-sm transition border border-emerald-100 shadow-sm">
+                        <div class="text-emerald-700 group-hover:scale-110 group-hover:text-emerald-900 transition duration-500">
+                            <!-- Icono de Educación -->
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 14v7"></path></svg>
+                        </div>
+                    </div>
+                    <h4 class="text-lg font-bold text-gray-800 group-hover:text-emerald-700 transition">Educación</h4>
+                    <p class="text-gray-600 text-sm mt-2">Artículos, análisis y reflexiones sobre la docencia y el sistema educativo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- SECCIÓN DE TEXTOS: Línea de tiempo (Poesía y Reflexiones) -->
+    <section id="textos" class="py-16 bg-white border-t border-emerald-100">
+        <div class="max-w-3xl mx-auto px-4">
+            <h3 class="text-2xl font-poesia text-center text-emerald-900 mb-4">Poesía y escritura</h3>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Una línea de tiempo de poemas, apuntes y fragmentos escritos desde distintas estaciones de la experiencia.</p>
+            
+            <!-- Contenedor de la línea de tiempo -->
+            <div class="border-l-2 border-emerald-200 pl-8 ml-4 md:ml-0 space-y-12">
+                
+                <!-- BLOQUE DE TEXTO (5 Junio 2026) -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] bg-emerald-500 w-4 h-4 rounded-full mt-1.5 border-4 border-white"></div>
+                    <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">5 Junio, 2026</span>
+                    <h4 class="text-xl font-poesia text-gray-900 mt-2 mb-3">Facho nunca</h4>
+                    <div class="font-poesia text-gray-600 whitespace-pre-line">
+                        Facho nunca 
+                        porque creo en la ternura,
+
+                        en el poder de los libros abiertos y envejecidos,
+
+                        amarillentos y con las puntas dobladas,
+
+                        en los cabellos al viento y los pies descalzos.
+
+                        Facho nunca,
+
+                        porque he sentido y he visto la escasez 
+                        pero también el trabajo duro,
+                        contra viento y marea 
+                        sin palancas.
+
+                        Facho nunca,
+                        porque para los de mi generación, 
+                        los militares dejaron de ser héroes defensores y se transformaron en asesinos.
+                        y las armas y la guerra solamente en un negocio,
+                        dejaron de ser luchas justas 
+                        si alguna vez lo fueron en el sentido purista.
+
+                        Facho nunca,
+                        porque mi fe es personal 
+                        y mi Dios bondadoso.
+                        Y si un día me levanto,
+                        será contra lo injusto,
+                        lo homogéneo,
+                        lo dogmático y lo frío.
+
+                        Facho nunca,
+                        porque creo, busco, amo
+                        y germino en la ternura.
+                    </div>
+                </div>
+
+                <!-- BLOQUE DE TEXTO (16 Abril 2026) -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] bg-emerald-500 w-4 h-4 rounded-full mt-1.5 border-4 border-white"></div>
+                    <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">16 Abril, 2026</span>
+                    <h4 class="text-xl font-poesia text-gray-900 mt-2 mb-3">Equidad no existe</h4>
+                    <div class="font-poesia text-gray-600 whitespace-pre-line">
+                        Equidad no existe.
+                        Difiere el idioma,
+                        la indumentaria,
+                        las costumbres,
+                        los ingresos económicos, 
+                        el trabajo.
+
+                        Una vez 
+                        podemos sentirnos iguales ante la ley,
+                        con sus bemoles.
+
+                        Pero matemáticamente iguales 
+                        porque a pesar de lo que creas o pienses,
+                        el voto del empresario de San Isidro,
+                        pesa y cuenta exactamente igual 
+                        que cualquier voto andino o amazónico.
+
+                        Si existe un voto ignorante,
+                        está en todos lados,
+                        en los naranjas, los celestes, los rojos, los verdes y los blancos.
+
+                        ¿Quién te representa?
+                        ¿Te representa de verdad? 
+                        Tu mal menor, su mal menor o el mío,
+                        pueden y efectivamente son diferentes,
+                        pero analfabetos políticos muchos 
+                        y de todas las tiendas.
+
+                        Realmente ignorante el racista, el clasista, el aporofóbico que ni entiende ni se pregunta sobre la realidad del otro.
+
+                        El centro, 
+                        el consenso, el diálogo y la concertación 
+                        se quedaron debajo del 10%
+                        Nos quedaron los extremos otra vez.
+
+                        Nos vemos en 5 años,
+                        si hay suerte.
+                    </div>
+                </div>
+
+                <!-- BLOQUE DE TEXTO (15 Abril 2026) -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] bg-emerald-500 w-4 h-4 rounded-full mt-1.5 border-4 border-white"></div>
+                    <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">15 Abril, 2026</span>
+                    <h4 class="text-xl font-poesia text-gray-900 mt-2 mb-3">Fraccionado</h4>
+                    <div class="font-poesia text-gray-600 whitespace-pre-line">
+                        El Perú está fraccionado, 
+                        fracturado, 
+                        roto.
+
+                        Entre la ineptitud de la autoridad electoral 
+                        y el discurso alarmista, 
+                        fraudista y delirante de López Aliaga.
+
+                        No es simple pero sí previsible.
+
+                        El limeño se pregunta 
+                        ¿Cómo, por qué Roberto Sánchez?
+
+                        Porque la parte alejada,
+                        postergada, ignorada del país busca y encuentra su opción menos mala. 
+
+                        Hay que aceptar que somos por lo menos 
+                        tres naciones diferentes, 
+                        entre las zonas urbanas y la región, 
+                        la costa, los andes y la amazonia.
+
+                        Puedes discutir todo lo que quieras,
+                        pero tuvimos un bufet muy malo,
+                        36 platos entre los indigestos y los incomibles.
+
+                        Tenemos, casi seguro, un escenario como el del 2021
+                        con la salvedad 
+                        de que ya tenemos una muestra de lo que fue el gobierno de Castillo:
+                        poca izquierda y mucho aprovechamiento personal,
+                        poco programa 
+                        y mucho amiguismo.
+
+                        ¿Keiko es mejor?
+                        NO
+                        Aunque esa explicación es más larga.
+                    </div>
+                </div>
+
+                <!-- BLOQUE DE TEXTO (27 Marzo 2026) -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] bg-emerald-500 w-4 h-4 rounded-full mt-1.5 border-4 border-white"></div>
+                    <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">27 Marzo, 2026</span>
+                    <h4 class="text-xl font-poesia text-gray-900 mt-2 mb-3">Un proceso complejo</h4>
+                    <div class="font-poesia text-gray-600 whitespace-pre-line">
+                        La educación, querido lector, es un proceso complejo y no por las razones que podrías sospechar.
+
+                        Es compleja porque está viva y se mueve y cambia cada día y lo que era ayer ya no es hoy día. 
+
+                        Requiere de una energía constante y no de las energías místicas y mágicas sino de esas energías que te hacen parar del asiento y cambiar, aumentar, mover, quitar una actividad y responder al momento, a lo que te trajo ese salón, ese estudiante, esa clase.
+
+                        La educación querido lector, no es un juego, aunque nunca deba dejar de jugar ni es un chiste aunque tenga que estar llena de chistes y es muy seria aunque la mayor parte de las veces requiera no tomarse las cosas en serio ni de forma personal.
+
+                        Si el estudiante está triste o enojado, te aseguro en 98 de cada 100 casos, no tiene que ver contigo. Es su casa, sus cosas, sus amigos o los líos que imagina en su cabeza, muchas veces y lo digo por experiencia, lo más saludable es sonreír y entrecerrar los ojos. 
+
+                        Te vi, me di cuenta de lo que pasa, no lo estoy dejando pasar, estoy atento pero no te estoy juzgando.
+
+                        La educación nunca va a ser artificial mientras haya conexión y aprendizaje, ni lo es la inteligencia, pero eso será tema largo para otra oportunidad.
+                    </div>
+                </div>
+
+                <!-- BLOQUE DE TEXTO (20 Marzo 2026) -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] bg-emerald-500 w-4 h-4 rounded-full mt-1.5 border-4 border-white"></div>
+                    <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">20 Marzo, 2026</span>
+                    <h4 class="text-xl font-poesia text-gray-900 mt-2 mb-3">Mi silencio</h4>
+                    <div class="font-poesia text-gray-600 whitespace-pre-line">
+                        Ya no lucho contra mi silencio,
+                        me gusta,
+                        lo abrazo 
+                        y lo defiendo a capa y espada en mis fueros internos.
+
+                        No espero que se entienda, 
+                        ya no.
+
+                        Y atesoro la cantidad, calidad y utilidad de mis palabras.
+
+                        Es mi ritmo y mi forma.
+
+                        Que no te agarre desprevenido si un día me ves en clase o en casa,
+                        esos son mis espacios seguros 
+                        y de vez en cuando 
+                        una charla o una presentación de impro.
+
+                        Excepciones.
+                    </div>
+                </div>
+
+                <!-- BLOQUE DE TEXTO (11 Marzo 2026) -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] bg-emerald-500 w-4 h-4 rounded-full mt-1.5 border-4 border-white"></div>
+                    <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">11 Marzo, 2026</span>
+                    <h4 class="text-xl font-poesia text-gray-900 mt-2 mb-3">La discusión</h4>
+                    <div class="font-poesia text-gray-600 whitespace-pre-line">
+                        Es claro que la educación presencial es más completa y adecuada para la formación en todos los niveles, realmente en este momento esa no es la discusión. 
+
+                        Pasan otras cosas o pasan más cosas a la vez de las que uno podría considerar desde su óptica. 
+
+                        El combustible está caro, todo el mercado, desde los alimentos hasta los camiones basureros se perjudican, mandaron a clases virtuales, no es lo mejor, pero es lo que se hizo. 
+
+                        Reprogramación, adaptación, apertura de Classroom, zoom, meet, Teams y todos esos juguetes y desempolvar el Nearpod, el Menti, los formularios y la gamificación virtual y nos tragamos el sapo del discurso en el aula que aparta a los estudiantes de las pantallas por completo. 
+
+                        Hace unas horas, nos dijeron que todos volvían a clase presencial, retomar la programación presencial a media semana, terminar procesos que comenzaron en virtual de manera presencial, desactivar las actividades que ya estaban marcadas para hacerse en entorno virtual, regresar al salón, meter a congelar el pollo que habíamos sacado para el almuerzo y subirnos a la combi que promete que el pasaje solo subirá por estos días. 
+
+                        La discusión no está entre el presencial o el virtual, está en la improvisación y la falta de respeto a los tiempos y modos de organización de todo un país que no puede quedarse sin batería en el celular, porque si no, ahora mismo estaría durmiendo y a la espera de que el profe abra el Zoom a las 8, pero ya no estamos ahí. 
+
+                        Un mes y un día para las elecciones.
+                    </div>
+                </div>
+
+                <!-- BLOQUE DE TEXTO (6 Marzo 2026) -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] bg-emerald-500 w-4 h-4 rounded-full mt-1.5 border-4 border-white"></div>
+                    <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">6 Marzo, 2026</span>
+                    <h4 class="text-xl font-poesia text-gray-900 mt-2 mb-3">Abre tu Classroom</h4>
+                    <div class="font-poesia text-gray-600 whitespace-pre-line">
+                        Solo para que quede constancia, el 1 de marzo de 2026, uno de los ductos de gas de Camisea tuvo un desperfecto seguido por una deflagración, lo que dejó inhabilitada en un gran porcentaje la llegada de gas a Lima y otras ciudades, declararon 15 días de emergencia.
+
+                        Entonces no hay gas, el combustible en general sube de precio, las fábricas dejan de funcionar, las cocinas se cierran, el gas doméstico se encarece.
+
+                        Detenemos las clases, las cosas en el mercado van subiendo, primero por especulación, luego por los costos de transporte, los camiones de basura no pueden recargar gas, nos miramos las caras. 
+
+                        Sin contar que estamos a un mes y unos días de las elecciones y que hay una guerra en la que está en juego el futuro del mundo, justamente en el lugar con más petróleo del planeta.
+
+                        Casi nada. 
+                        Abre tu Classroom.
+                    </div>
+                </div>
+
+                <!-- BLOQUE DE TEXTO (16 Octubre 2025) -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] bg-emerald-500 w-4 h-4 rounded-full mt-1.5 border-4 border-white"></div>
+                    <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">16 Octubre, 2025</span>
+                    <h4 class="text-xl font-poesia text-gray-900 mt-2 mb-3">Vorágine</h4>
+                    <div class="font-poesia text-gray-600 whitespace-pre-line">
+                        Entonces, un día la vorágine de la rutina y la indiferencia me consumió,
+                        dejé de intentar ir contra el viento y fui una hoja cayendo del árbol
+                        ya no contra la marea,
+                        sino solo una botella flotando a merced de la corriente.
+
+                        Asentí, permití que me contaran mentiras
+                        que inventaran narrativas
+                        y las creí.
+
+                        Cerré los ojos,
+                        no pude,
+                        o simplemente no me pregunté si lo que sucedía era parte de las circunstancias.
+
+                        Cansancio, bucles,
+                        repetición. repetición, repetición.
+                    </div>
+                </div>
+
+                <!-- BLOQUE DE TEXTO (15 Agosto 2025) -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] bg-emerald-500 w-4 h-4 rounded-full mt-1.5 border-4 border-white"></div>
+                    <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">15 Agosto, 2025</span>
+                    <h4 class="text-xl font-poesia text-gray-900 mt-2 mb-3">Implicarse</h4>
+                    <div class="font-poesia text-gray-600 whitespace-pre-line">
+                        No eres activista 
+                        hasta después de las lacrimógenas y el vinagre.
+
+                        No eres médico hasta después de la primera experiencia de muerte.
+
+                        No eres maestro 
+                        hasta que tienes que cambiar una clase sobre la marcha porque algo pasó en el momento.
+
+                        No eres escritor hasta que alguien que no entiende nada 
+                        te dice que está bueno como pasatiempo.
+
+                        No eres youtuber hasta que llegan los primeros dos dólares con treinta centavos a tu cuenta.
+
+                        No eres actor hasta después del aplauso, 
+                        reverencia, flores y 45 ensayos.
+
+                        Puedes tener los títulos enmarcados 
+                        y todas las horas de clase,
+                        creditos y ponderado.
+
+                        Pero hay que empolvarse las manos,
+                        Mojarse las botas,
+                        Implicarse. Sentir la luz del escenario en la cara.
+
+                        No sirve si es a medias,
+                        no funciona solo así.
+
+                        Para ser, hay que hacer. Más de una vez.
+                    </div>
+                </div>
+
+                <!-- BLOQUE DE TEXTO (Agosto 2025) -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] bg-emerald-500 w-4 h-4 rounded-full mt-1.5 border-4 border-white"></div>
+                    <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">Agosto, 2025</span>
+                    <h4 class="text-xl font-poesia text-gray-900 mt-2 mb-3">Lograr que suceda</h4>
+                    <div class="font-poesia text-gray-600 whitespace-pre-line">
+                        Para lograr que suceda,
+                        no hace falta ser un héroe.
+
+                        Es preciso decidir,
+                        permanecer, insistir
+                        y buscar a los mejores aliados, aquellos que hacen fácilmente
+                        lo que a ti te cuesta hacer.
+
+                        Y sucede y no eres tú, 
+                        pero ese logro es total y absolutamente
+                        tuyo.
+                    </div>
+                </div>
+
+                <!-- BLOQUE DE TEXTO (28 Julio 2025) -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] bg-emerald-500 w-4 h-4 rounded-full mt-1.5 border-4 border-white"></div>
+                    <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">28 Julio, 2025</span>
+                    <h4 class="text-xl font-poesia text-gray-900 mt-2 mb-3">Perú</h4>
+                    <div class="font-poesia text-gray-600 whitespace-pre-line">
+                        Viva el Perú
+                        sin corrupción,
+                        viva bendecido por el esfuerzo de su gente.
+
+                        Viva el Perú
+                        que es más grande que sus políticos,
+                        sus leyes mal hechas
+                        y el gobierno que ha hecho añicos la institucionalidad.
+
+                        Sin defensoría del pueblo,
+                        sin contraloría,
+                        Sin junta Nacional de Justicia,
+                        Sin Tribunal Constitucional,
+                        Sin congreso,
+                        Sin Ministerio de Educación,
+                        Con Santibañez, Keiko, Acuña y López Aliaga
+
+                        Con un gobierno abandonado por la gente
+                        que se aferra a su tiempo,
+                        a su sueldo,
+                        a sus intereses particulares.
+
+                        Qué viva el Perú que somos nosotros y no ellos,
+                        Nunca ellos..
+
+                        Ni felices, ni fiestas, pero si patria,
+                        siempre patria.
+                    </div>
+                </div>
+
+                <!-- BLOQUE DE TEXTO (6 Julio 2025) -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] bg-emerald-500 w-4 h-4 rounded-full mt-1.5 border-4 border-white"></div>
+                    <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">6 Julio, 2025</span>
+                    <h4 class="text-xl font-poesia text-gray-900 mt-2 mb-3">Día del maestro</h4>
+                    <div class="font-poesia text-gray-600 whitespace-pre-line">
+                        Al final del día, y no solo de este, quisiera creer que la mayor parte de las clases dadas han sido realmente útiles, y que lo que cada estudiante se ha llevado de estos más de quince años de colegios y correteos es algo verdaderamente valioso.
+
+                        ¿Qué recuerdan los que ahora ya bordean los 30 años y me tuvieron de profe en el 2012? Es una pregunta que siempre tengo ganas de hacerles.
+
+                        Son 3150 entre lunes y viernes, más o menos 15000 horas pedagógicas y casi 1500 estudiantes hasta hoy.
+
+                        Yo no solo acepto, sino que suelo contar, que el profesor que soy hoy no se parece al de hace doce años: Ni la paciencia, ni el trato, ni siquiera el tono de voz, que antes no existía y que hoy uso para dar clase, son los mismos.
+
+                        Aprendí demasiado, pero nunca es suficiente. Siempre hay algo más que aprender, una clase mejor por hacer, una conversación más profunda por tener, y un momento, o varios, para detener la clase y atender lo que sucede con los chicos y chicas que comparten conmigo en clase.
+
+                        Lo digo y lo sostengo: hago esto porque me gusta, e intento que sea siempre por el bien mayor de mis estudiantes, esperando que no el mundo, ni el Perú, sino ese pequeño universo que es mi salón pueda ser un poquito mejor mañana, después de clase.
+                    </div>
+                </div>
+
+                <!-- BLOQUE DE TEXTO (1 Julio 2025) -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] bg-emerald-500 w-4 h-4 rounded-full mt-1.5 border-4 border-white"></div>
+                    <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">1 Julio, 2025</span>
+                    <h4 class="text-xl font-poesia text-gray-900 mt-2 mb-3">No basta</h4>
+                    <div class="font-poesia text-gray-600 whitespace-pre-line">
+                        No basta,
+                        no basta con saber un poco de historia,
+                        no basta con indignarse de vez en cuando.
+                        No basta.
+
+                        Hay que entender,
+                        entender que lo mismo es lo mismo
+                        y que distinto es distinto.
+
+                        Hay que votar bien,
+                        hay que dejar de hacerse el que no ve
+                        y comenzar a hacer
+
+                        O dejar,
+                        dejar de hacer aquello que nos está envenenando por dentro.
+
+                        No basta,
+                        no es suficiente,
+                        no alcanza.
+
+                        No importa cuándo lo leas,
+                        no importa cuándo lo escuches,
+                        no basta.
+
+                        Y deja,
+                        déjalo,
+                        los problemas son demasiados,
+                        somos todos.
+
+                        Y si tuviéramos intención de indignarnos
+                        las plazas,
+                        todas, estarían repletas
+                        y no lo están.
+
+                        Nunca es suficiente,
+                        eso no quiere decir que sea imposible,
+                        nunca es suficiente.
+
+                        Y aunque incómodo hay que hablarlo, gritarlo,
+                        poner un recordatorio de "democracia pendiente"
+                        ponerse las zapatillas
+                        y alzar la voz,
+                        esperando no estar solo.
+                    </div>
+                </div>
+
+                <!-- BLOQUE DE TEXTO (25 Junio 2025) -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] bg-emerald-500 w-4 h-4 rounded-full mt-1.5 border-4 border-white"></div>
+                    <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">25 Junio, 2025</span>
+                    <h4 class="text-xl font-poesia text-gray-900 mt-2 mb-3">Indignados de verdad</h4>
+                    <div class="font-poesia text-gray-600 whitespace-pre-line">
+                        A veces parece que algo se cuece, 
+                        Algo por demás violento, 
+                        Predecible, 
+                        Lamentable...
+
+                        Parece que no aprendemos
+                        y seguimos, 
+                        con el mismo olor a muerte, 
+                        a golpes, 
+                        a cicatrices que no terminan de serlo.
+
+                        No es suficiente el crespón negro, 
+                        la palabra, 
+                        La etiqueta 
+                        y el duelo de medio día.
+
+                        Dejemos de criar matones, 
+                        apañar engreimientos, 
+                        omitir denuncias 
+                        y aguantar silencios cómplices.
+
+                        Que no parezca que estamos juntos e indignados,
+                        que lo estemos de verdad.
+                    </div>
+                </div>
+
+                <!-- BLOQUE DE TEXTO (6 Mayo 2025) -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] bg-emerald-500 w-4 h-4 rounded-full mt-1.5 border-4 border-white"></div>
+                    <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">6 Mayo, 2025</span>
+                    <h4 class="text-xl font-poesia text-gray-900 mt-2 mb-3">Diana Velarde</h4>
+                    <div class="font-poesia text-gray-600 whitespace-pre-line">
+                        Una gerente, que no se parece a nadie,
+                        que casualmente se llama Diana Velarde.
+
+                        Diana gana 11 sueldos mínimos aun así, es extraño, porque la han visto usando relojes que cuestan mucho más de lo que podría justificar.
+
+                        Diana tuvo solo 4% en su última evaluación de desempeño, evidentemente no hace bien su trabajo, es más, hace poco, se tomó tres días para hacerse algunos arreglitos estéticos, no dejó a nadie como reemplazo.
+
+                        Diana, además, ayer fue a la oficina de recursos humanos a pedir que le dupliquen el sueldo y extrañamente, están a punto de hacerlo.
+
+                        Diana debería renunciar, pero no tiene intenciones de hacerlo.
+
+                        Diana no representa a nadie en particular, cualquier parecido con la realidad es pura coincidencia.
+                    </div>
+                </div>
+
+                <!-- BLOQUE DE TEXTO (1 Mayo 2025) -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] bg-emerald-500 w-4 h-4 rounded-full mt-1.5 border-4 border-white"></div>
+                    <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">1 Mayo, 2025</span>
+                    <h4 class="text-xl font-poesia text-gray-900 mt-2 mb-3">Tu vida entera</h4>
+                    <div class="font-poesia text-gray-600 whitespace-pre-line">
+                        ¡Feliz día!
+
+                        A los que trabajan con las manos,
+                        los que tienen la vocación a flor de piel,
+                        a los artistas: los de las tablas, los que cantan, pintan, bailan y expresan la vida.
+
+                        Los que se desvelan
+                        y los que madrugan,
+                        los que aun no están en el trabajo que esperaban pero no paran de buscarlo.
+
+                        Feliz día
+                        a los que por fin aprendieron a descansar y a decir: eso no me corresponde.
+
+                        Porque tu trabajo
+                        es parte de tu vida,
+                        pero nunca tu vida entera.
+
+                        ¡Feliz día!
+                    </div>
+                </div>
+
+                <!-- BLOQUE DE TEXTO (1 Abril 2025) -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] bg-emerald-500 w-4 h-4 rounded-full mt-1.5 border-4 border-white"></div>
+                    <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">1 Abril, 2025</span>
+                    <h4 class="text-xl font-poesia text-gray-900 mt-2 mb-3">Yo no</h4>
+                    <div class="font-poesia text-gray-600 whitespace-pre-line">
+                        Yo no.
+                        Yo no creo en el azar,
+                        ni en la alineación de los planetas,
+                        ni mal de ojo, ni luna llena.
+
+                        Tampoco en mercurio,
+                        esté o no en retrógrado.
+
+                        No toco madera
+                        ni me aviento sal por el hombro.
+                        no tengo guardado un dólar en la billetera
+                        ni lentejas ni siquiera uvas de media noche.
+
+                        Si doy y recibo tijeras,
+                        me gustan los viernes aunque caigan en 13
+                        y los domingos aunque sean 7.
+
+                        Yo creo en un Dios vivo,
+                        que no se quedó en la cruz,
+                        que es capaz de sanar y cambiar.
+                        Que es la cabeza de la iglesia que además, es una sola.
+                        Y que se basa en amor, fe, paz, bondad, benignidad.
+
+                        Ante todas esas cosas, no hay ley.
+                    </div>
+                </div>
+
+                <!-- BLOQUE DE TEXTO (19 Marzo 2025) -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] bg-emerald-500 w-4 h-4 rounded-full mt-1.5 border-4 border-white"></div>
+                    <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">19 Marzo, 2025</span>
+                    <h4 class="text-xl font-poesia text-gray-900 mt-2 mb-3">Me mataron</h4>
+                    <div class="font-poesia text-gray-600 whitespace-pre-line">
+                        Me mataron,
+                        no entendí por qué,
+                        no tuve tiempo.
+
+                        Fue una bala,
+                        no se había perdido,
+                        tengo que confesarlo, yo decidí no pagar,
+                        no darle de mi trabajo a un manojo de delincuentes,
+                        fue mi error.
+
+                        También lo fue salir a la calle
+                        en medio de la tarde, sin miedo,
+                        sabiendo que iba a respirar el humo tóxico de las lacrimógenas y que la policía no iba a defenderme.
+
+                        Esa vez no me mataron,
+                        pero esos huecos en mi espalda no eran de goma,
+                        no me estaban disuadiendo.
+
+                        O quizás sí,
+                        me rompieron dos costillas,
+                        estuve en cama tres meses,
+                        no pude salir de casa.
+
+                        En ese tiempo,
+                        la autoridad, decidió que la organización criminal no era un delito
+                        y que para allanar la casa de un delincuente
+                        era buena idea avísale primero.
+                        Muy lógico.
+
+                        Y quitaron la prisión preventiva,
+                        algo muy útil para los violadores, extorcionadores y asesinos.
+                        Ya no importa.
+
+                        Tampoco importan los colegios
+                        que tienen que cerrar
+                        porque les están poniendo bombas en la puerta, granadas de guerra, explosivos.
+                        En la escuela...
+
+                        Entiendo también que mis amigos no salgan a reclamar por mí,
+                        sé que tienen miedo,
+                        ya han matado a demasiados.
+                        Hemos muerto más de 400 en los últimos 90 días.
+
+                        Yo...
+                        Yo sí saldría,
+                        pero ya no tengo forma de hacerlo.
+
+                        Mi voz,
+                        mi presencia,
+                        mi bronca ya no van a gritar en la calle.
+
+                        Quisiera creer que valió la pena,
+                        quisiera.
+                    </div>
+                </div>
+
+                <!-- BLOQUE DE TEXTO (4 Octubre 2024) -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] bg-emerald-500 w-4 h-4 rounded-full mt-1.5 border-4 border-white"></div>
+                    <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">4 Octubre, 2024</span>
+                    <h4 class="text-xl font-poesia text-gray-900 mt-2 mb-3">Ruleta</h4>
+                    <div class="font-poesia text-gray-600 whitespace-pre-line">
+                        Juguemos a la ruleta,
+                        no cualquiera,
+                        una ruleta con truco.
+
+                        Que le da a los que más tienen
+                        y le quita a los que más necesitan.
+                        Ruleta, pero no de azar.
+
+                        Una que le da 14 sueldos
+                        más bono, gasolina,
+                        asesores, seguro privado y canasta a unos
+                        y menos que el sueldo mínimo,
+                        informalidad y peligro flagrante y permanente a otros.
+
+                        Amnistía tributaria a los que deben millones
+                        y un ejército de fiscalizadores arranchando carritos de churros y papa con huevo a los otros.
+
+                        Una ley que impide que los partidos,
+                        los corruptos y los defensores de delincuentes
+                        se libren de ser organizaciones criminales
+                        y esa misma ley que impide que los marcas, los extorcionsdores y los delincuentes comunes sean tratados como bandas.
+
+                        Y si hay que revisar un domicilio,
+                        llamamos al abogado y nos sentamos esperar que aparezca para entrar a levantar pruebas mientras desaparecen todo lo que podría servir.
+                        Muy lógico ¿No?
+
+                        Una mamushka de cajas de Pandora
+                        pero para no perder la costumbre, prioridades:
+
+                        Un nuevo avión presidencial
+                        un par de cirugías,
+                        una ley contra el terrorismo urbano
+                        para que luego, nunca más, nadie,
+                        pueda salir a la calle.
+
+                        Para que finalmente,
+                        sea legal y constitucional decirle terruco al que salió a la plaza con una bandera,
+                        un paño con vinagre
+                        y el dni pegado con cinta de embalaje bajo la ropa.
+
+                        Juguemos a la ruleta...
+                    </div>
+                </div>
+
+                <!-- BLOQUE DE TEXTO (20 Abril 2022) -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] bg-emerald-500 w-4 h-4 rounded-full mt-1.5 border-4 border-white"></div>
+                    <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">20 Abril, 2022</span>
+                    <h4 class="text-xl font-poesia text-gray-900 mt-2 mb-3">Señor Paz</h4>
+                    <div class="font-poesia text-gray-600 whitespace-pre-line">
+                        Ya tengo 40 años.
+                        Años que contienen todos los retos que asumí 
+                        o que simplemente sucedieron por bendición
+                        buscando hacer las cosas lo mejor posible, 
+                        sembrando y buscando felicidad, tranquilidad, ganas de continuar. 
+
+                        Uno de los más grandes retos fue dedicarme a algo diferente. 
+                        decidir ser profesor en una familia de artesanos de los fierros y las telas.
+
+                        Siempre me dijiste que sería difícil. 
+                        que habría que hacer camino que no existía 
+                        y esforzarse el doble.  
+
+                        Solo sabía una cosa, 
+                        Sabía que quería ayudar a los demás 
+                        y crecer mientras encontraba la forma de hacer crecer a los que me rodean. 
+
+                        Hoy, hace 14 años que papá dejó de estar con nosotros
+                        y creo que hicieron falta tantos años para escribir al respecto. 
+
+                        Señor Paz, 
+                        sé que estarías orgulloso de mí. 
+                        siempre te tengo presente.
+                    </div>
+                </div>
+
+                <!-- BLOQUE DE TEXTO (12 Marzo 2021) -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] bg-emerald-500 w-4 h-4 rounded-full mt-1.5 border-4 border-white"></div>
+                    <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">12 Marzo, 2021</span>
+                    <h4 class="text-xl font-poesia text-gray-900 mt-2 mb-3">Soy maestro</h4>
+                    <div class="font-poesia text-gray-600 whitespace-pre-line">
+                        No hago campaña por NINGÚN candidato, 
+                        me parece que es una de las peores elecciones en la historia del país 
+                        y ya es mucho decir. 
+
+                        No soy militante político, 
+                        no estoy afiliado a partido alguno 
+                        y en este instante, 
+                        no tengo ni siquiera simpatía por alguna de las opciones que están en carrera. 
+
+                        Opino,, 
+                        con fuentes y sin apasionamientos, 
+                        no defiendo a nadie. 
+
+                        Me preocupa la política,
+                        porque conlleva el desarrollo de las leyes y por consiguiente el bienestar o malestar público. 
+
+                        Me hace ruido lo que viene en las semanas que faltan para las elecciones, 
+                        porque será rudo y bastante irracional. 
+
+                        Me espanta lo que se proyecta para el congreso, 
+                        porque al final, las decisiones están en esas manos. 
+
+                        No me verán postulando a cargo alguno, 
+                        ni levantando banderas de ningún color. 
+
+                        No es lo que hago, 
+                        soy maestro. 
+
+                        El voto, 
+                        es secreto, personal 
+                        y está constitucionalmente defendido por el estado. 
+
+                        Mis creencias, filiaciones y lealtades 
+                        están muy lejos de la arena política. 
+                    </div>
+                </div>
+
+                <!-- BLOQUE DE TEXTO (3 Septiembre 2018) -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] bg-emerald-500 w-4 h-4 rounded-full mt-1.5 border-4 border-white"></div>
+                    <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">3 Septiembre, 2018</span>
+                    <h4 class="text-xl font-poesia text-gray-900 mt-2 mb-3">Pedir de regreso nuestro país</h4>
+                    <div class="font-poesia text-gray-600 whitespace-pre-line">
+                        Deberíamos estar en un país que no entra en si mismo de tanta indignación. 
+
+                        Un país que se pregunta 
+                        ¿Qué hago yo para que esto cambie? 
+                        ¿Qué hice yo para que las cosas lleguen a este punto?
+                        Que se vuelca a las calles e inunda las redes.
+                        deberíamos digo, porque no está sucediendo. 
+
+                        El erario público, es, desde hace décadas, 
+                        o desde siempre, una tubería rota, 
+                        rota por todos lados. 
+
+                        El informal, el testaferro, el contratista, el alcalde, 
+                        el presidente de región, 
+                        el juez supremo, el congresista, 
+                        el asesor, el ministro, 
+                        el candidato, la presidenta del partido, la presidenta
+                        Pero seguimos. 
+
+                        porque creemos que el barco está demasiado averiado, 
+                        porque nos faltan manos para tapar los hoyos, 
+                        nos cansamos,
+                        o ni siquiera intentamos. 
+
+                        Deberíamos pedir de regreso nuestro país, 
+                        simplemente porque es NUESTRO.
+
+                        Los que tienen corona no son mayoría, 
+                        los inmunes, los del antejuicio, los amarrados, 
+                        los que tienen vara, 
+                        los hermanos, los socios y todos los demás.
+
+                        Todo el mundo sabía,   
+                        todos lo sabemos, 
+                        pero el nihilismo y el hastío nos detienen.
+
+                        El pesimismo nos embarga 
+                        y parece que ya no hay nadie en la plaza, 
+                        que San Martín se quedó solo en el caballo,
+                        que los universitarios se quedaron en la huaca,
+                        que se nos olvidó.
+
+                        Parece.
+                    </div>
+                </div>
+
+                <!-- BLOQUE DE TEXTO (24 Marzo 2018) -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] bg-emerald-500 w-4 h-4 rounded-full mt-1.5 border-4 border-white"></div>
+                    <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">24 Marzo, 2018</span>
+                    <h4 class="text-xl font-poesia text-gray-900 mt-2 mb-3">Más que números y cuentas</h4>
+                    <div class="font-poesia text-gray-600 whitespace-pre-line">
+                        Será que te detienes un poco,
+                        Solo un poco...
+                        Lo suficiente como para percatarte del silencio que precede a las canciones,
+                        El aroma de la arena que humea bajo la lluvia
+
+                        Será, sin embargo, imposible pervivir sin los relojes, los latidos y el ocaso,
+                        Sobre todo los ocasos en la playa  que encienden dorados tus ojos.
+
+                        Será que andas de mi mano entonces,
+                        día y noche,
+                        Pues no hay pausas
+                        y te quedas a contarme con detalles cada día.
+
+                        Y el tiempo,
+                        ya es, hace tiempo más que números y cuentas,
+                        El calendario,
+                        hace varios calendarios que se deshoja
+                        esperando, a tu lado,
+                        uno,
+                        dos,
+                        mil días más.
+                    </div>
+                </div>
+
+                <!-- BLOQUE DE TEXTO (3 Marzo 2018) -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] bg-emerald-500 w-4 h-4 rounded-full mt-1.5 border-4 border-white"></div>
+                    <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">3 Marzo, 2018</span>
+                    <h4 class="text-xl font-poesia text-gray-900 mt-2 mb-3">Introvertido</h4>
+                    <div class="font-poesia text-gray-600 whitespace-pre-line">
+                        Resulta que soy bastante introvertido.
+                        Aunque no sé si se pueda llamar timidez o introversión.
+
+                        Yo lo explico como una extraña fobia social, me cuesta comenzar una conversación aunque no continuarla, me causa ansiedad encontrarme con gente conocida por la calle, porque no encuentro algo espontáneo que decir, no sé cómo tratar a las personas en un primer momento.
+
+                        Quizá porque prefiero observar detenidamente el entorno antes de aventurarme a decir algo inadecuado, tal vez simplemente porque no logro hilar adecuadamente las palabras.
+
+                        Extrañamente, cuando hablo en público, doy un taller, una clase o expongo, los nervios desaparecen y siento una comodidad inmediata, mucho más si lo que tengo que hacer es escribir, definitivamente, es una de mis formas de expresión favorita.
+
+                        Cosas extrañas.
+                    </div>
+                </div>
+
+                <!-- BLOQUE DE TEXTO (5 Enero 2018) -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] bg-emerald-500 w-4 h-4 rounded-full mt-1.5 border-4 border-white"></div>
+                    <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">5 Enero, 2018</span>
+                    <h4 class="text-xl font-poesia text-gray-900 mt-2 mb-3">Oportunidad</h4>
+                    <div class="font-poesia text-gray-600 whitespace-pre-line">
+                        Puede que no haya tiempo,
+                        puede,
+                        y es posible que lo haya,
+                        y que lo haya a montones,
+                        borbotones, 
+                        centurias... millardos, millones. 
+
+                        Pero no hay garantías, 
+                        nadie nunca compró un día, 
+                        un minuto,
+                        una fracción aunque sea pequeñita de la vida... 
+
+                        Sucede tantas veces que olvidamos lo importante,
+                        lo profundo y gravitante 
+                        y quedamos entre la espada presente y la pared del futuro, 
+                        encrucijados, 
+                        detenidos, 
+                        congelados. 
+
+                        Toca moverse, 
+                        atreverse, 
+                        elevarse, 
+                        hacer gala del título de ser vivo. 
+                        respirante, andante y pensante.  
+
+                        Aprovechar el camino y la locura, 
+                        la cordura, los consejos
+                        las lágrimas, los espejos y las voces. 
+
+                        Liberados del reloj, 
+                        el alba y de los ocasos. 
+
+                        Abre, 
+                        abre siempre los brazos y confía.
+
+                        No hay eternidades, pero sí oportunidad
+                    </div>
+                </div>
+
+                <!-- BLOQUE DE TEXTO (23 Agosto 2017) -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] bg-emerald-500 w-4 h-4 rounded-full mt-1.5 border-4 border-white"></div>
+                    <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">23 Agosto, 2017</span>
+                    <h4 class="text-xl font-poesia text-gray-900 mt-2 mb-3">Más allá de la pizarra</h4>
+                    <div class="font-poesia text-gray-600 whitespace-pre-line">
+                        El primer gran error que se comete al hablar de educación,
+                        es evocar únicamente el colegio:
+                        un aula, un docente, un grupo de estudiantes,
+                        un conjunto de carpetas.
+
+                        Nos olvidamos que educar
+                        es invitar a descubrir,
+                        formar en valores,
+                        ilustrar y enriquecer el alma y el corazón
+                        antes que colmar la memoria de un millón de datos.
+
+                        Visto del otro lado,
+                        es mostrar el mundo y ese papel que los maestros continuamos,
+                        es tarea inicial de los padres
+                        y resultado de un conjunto de factores
+                        que escapan totalmente de nuestras manos.
+
+                        En ese sentido,
+                        una educación de calidad,
+                        va mucho más allá de tener o no clases,
+                        de estar o no en un aula.
+
+                        Es lograr que el ser humano,
+                        grande o chico,
+                        reciba estímulos y logre objetivos
+                        personales y sociales que lo hagan crecer
+                        y vayan más allá del salón, del portón del colegio y la pizarra.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: Educación y Sociedad -->
+    <section id="educacion" class="py-16 bg-papel border-t border-emerald-100">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="flex items-center justify-center gap-4 mb-12">
+                <div class="h-px bg-emerald-300 w-12 md:w-24"></div>
+                <h3 class="text-2xl font-poesia text-center text-emerald-900">Educación</h3>
+                <div class="h-px bg-emerald-300 w-12 md:w-24"></div>
+            </div>
+
+            <div class="space-y-12">
+                
+                <!-- Artículo: 19 de Mayo 2026 -->
+                <article class="bg-white p-8 md:p-12 shadow-sm border border-emerald-100 rounded-sm relative">
+                    <div class="absolute -top-3 left-6 md:left-10 bg-emerald-700 text-white text-xs font-bold uppercase tracking-widest px-4 py-1 rounded-sm shadow-sm">
+                        Ensayo / Opinión
+                    </div>
+                    <header class="mb-8 mt-2">
+                        <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">19 de Mayo, 2026</span>
+                        <h4 class="text-2xl md:text-3xl font-poesia text-gray-900 mt-2">¿Por qué insistimos en la Educación Sexual Integral?</h4>
+                    </header>
+                    <div class="font-poesia text-gray-700 text-lg whitespace-pre-line">
+                        El congreso acaba de eliminar por completo mediante una ley la Educación Sexual Integral en los colegios. 
+                        Es cierto que ya para este punto la educación sexual era un elemento mínimo dentro de la currícula en el curso de Desarrollo Personal pero con esta ley, se sepulta por completo cualquier posibilidad de educar desde las aulas en torno a los temas de sexualidad.
+
+                        ¿Por qué insistimos desde la escuela en la presencia de una educación sexual integral?
+                        Porque es justamente en el entorno familiar muy cercano de dónde surge la mayor parte de los abusos y es justamente en espacios familiares represivos donde se perpetran y perpetúan situaciones de violencia sistemática.
+                        En esos hogares no se va a educar eficazmente sobre sexualidad.
+
+                        Entonces sí, es necesario que la escuela enseñe qué es y en qué consiste el consentimiento, qué es una caricia y qué configura maltrato.
+                        Y sobre todo enseñar que la obediencia no es ciega y que nadie puede condicionar a un niño, adolescente. Enseñar a decir que no y a poner límites, hablando claramente sobre el tema sexual y del cuerpo.
+
+                        En los países en los que existe una educación sexual integral seria y bien sostenida, los niveles de abuso se han reducido de manera considerable.
+
+                        ¿Qué hacemos?
+                    </div>
+                </article>
+
+                <!-- Artículo: 7 de Mayo 2026 -->
+                <article class="bg-white p-8 md:p-12 shadow-sm border border-emerald-100 rounded-sm relative">
+                    <div class="absolute -top-3 left-6 md:left-10 bg-emerald-700 text-white text-xs font-bold uppercase tracking-widest px-4 py-1 rounded-sm shadow-sm">
+                        Reflexión Docente
+                    </div>
+                    <header class="mb-8 mt-2">
+                        <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">7 de Mayo, 2026</span>
+                        <h4 class="text-2xl md:text-3xl font-poesia text-gray-900 mt-2">¿Qué nos corresponde como profesores?</h4>
+                    </header>
+                    <div class="font-poesia text-gray-700 text-lg whitespace-pre-line">
+                        La educación, querido lector, es un proceso complejo que junta en el mismo escenario a padres, cuidadores, docentes, directivos, administrativos y estudiantes.
+                        Los contextos han cambiado y un padre, una madre, un cuidador de hace 30 años, no es el mismo, podríamos decir que no se parece en nada a los nuevos modelos 2026 de apoderado.
+                        
+                        El concepto de disciplina o castigo, la dinámica familiar y la relación entre el hogar y la escuela han cambiado drásticamente. Sobre ello, podríamos escribir libros y no agotaríamos el tema, ni de lejos.
+                        Hay otras cosas que nos ocupan, como la neurodiversidad que llena cada vez más nuestras aulas y las herramientas limitadas que tenemos para abordarla, porque cada caso es distinto, porque no somos ni psicólogos, ni terapeutas y a veces la realidad nos desborda.
+                        
+                        ¿Qué nos corresponde como profesores?
+                        Finalmente y solo porque ya basta por hoy, dejemos sobre la mesa el sistema educativo que está roto, los docentes que reciben más maltrato que reconocimiento y un mar de estudiantes con necesidades que ni sus padres terminan de entender además del uso de la tecnología dentro y fuera del aula, de día, de noche y de madrugada.
+                        
+                        Digamos que dejamos esto como una reseña mal cosida de un libro pendiente.
+                        Ya vuelvo.
+                    </div>
+                </article>
+
+                <!-- Artículo: 14 de Noviembre 2025 -->
+                <article class="bg-white p-8 md:p-12 shadow-sm border border-emerald-100 rounded-sm relative">
+                    <div class="absolute -top-3 left-6 md:left-10 bg-emerald-700 text-white text-xs font-bold uppercase tracking-widest px-4 py-1 rounded-sm shadow-sm">
+                        Análisis / Opinión
+                    </div>
+                    <header class="mb-8 mt-2">
+                        <span class="text-sm text-amber-600 font-bold uppercase tracking-widest">14 de Noviembre, 2025</span>
+                        <h4 class="text-2xl md:text-3xl font-poesia text-gray-900 mt-2">Index</h4>
+                    </header>
+                    <div class="font-poesia text-gray-700 text-lg whitespace-pre-line">
+                        El Index Librorum Prohibitorum, o Índice de libros prohibidos, entró en vigor oficialmente el 24 de marzo de 1564, una prohibición general de libros que incluían títulos de Descartes, Diderot, Victor Hugo, Pascal entre muchos otros, una prohibición vigente hasta 1966. 
+
+                        En los regímenes fascistas en el contexto de la guerra mundial, se prohibieron y quemaron libros entre 1930 y 1940, haciendo quemas de libros en plazas y espacios públicos, por considerarlas degeneradas, no alemanas o ideológicamente peligrosas, incluyendo libros de Einstein, Kafka, Hemingway y James Joyce.
+
+                        Actualmente, desde el año pasado, 2024, algunos estados de Estados Unidos vienen censurando libros en diversos distritos escolares, básicamente impulsados por asociaciones de padres de familia, títulos sobre racismo, diversidad, violencia. Libros que incluyen a Stephen King, Gabriel García Márquez, Isabel Allende básicamente en los estados de Florida y Texas. 
+
+                        Hace unos días, Indecopi sancionó al Colegio Franklin Roosevelt con una multa de aproximadamente S/141,433 (26.38 UIT) por poner a disposición de sus estudiantes material bibliográfico considerado inadecuado. La denuncia fue presentada por la Asociación Internacional de Consumidores y Usuarios de Seguros vinculados al congresista Alejandro Muñante.
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Organización / Archivo -->
+
+    <!-- Pie de página -->
+    <footer id="autor" class="bg-gray-900 text-gray-400 py-12 text-center mt-auto">
+        <div class="max-w-2xl mx-auto px-4">
+            <h4 class="text-white font-poesia text-xl mb-4">Sobre este espacio</h4>
+            <p class="text-sm text-gray-400 mb-8 font-light">
+                Fuera Del Algoritmo reúne textos, preguntas y materiales nacidos desde la experiencia humana: poesía, educación, observación y pensamiento en tiempos de ruido, prisa y automatismo.
+            </p>
+            <p class="text-xs tracking-widest uppercase">&copy; 2026 Fuera Del Algoritmo.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
